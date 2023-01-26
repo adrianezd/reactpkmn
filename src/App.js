@@ -1,22 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import Pokemon from "./services/getPokemon";
+import "./App.css";
 
 function App() {
+  const [pokemonDex, setPokemonDex] = useState([]);
+
+  useEffect(function () {
+    Pokemon({ keyword: "chansey" }).then((pokemonDex) =>
+      setPokemonDex(pokemonDex)
+    );
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>REACT APP</h1>
+        <section className="App-content">
+          {<span>{pokemonDex}</span>}
+          <button className="button" onClick={
+            () => Pokemon({ id: Math.floor(Math.random() * 898) + 1  }).then((pokemonDex) => setPokemonDex(pokemonDex))}>Random pokemon</button>  
+        </section>
       </header>
     </div>
   );
