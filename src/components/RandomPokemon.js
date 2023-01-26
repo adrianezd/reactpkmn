@@ -11,8 +11,7 @@ export default function RandomPokemmon(){
         );
     }, []);
     return (
-        <div className="App">
-            <header className="App-header">
+        <div>
                 <h1> WELCOME {pokemon}</h1>
                 <section className="App-content">
                     <button className="button" onClick={() => Pokemon({ id: Math.floor(Math.random() * 898) + 1 }).then((pokemon) => setPokemon(pokemon))}>Random pokemon
@@ -24,7 +23,6 @@ export default function RandomPokemmon(){
                     <button className="button" onClick={() => TeamPokemon({ teamSize: 6 }).then((team) => setTeam(team))}>Random Team
                     </button>
                 </section>
-            </header>
         </div>
     );
 } 
