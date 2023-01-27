@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import getAllPokemonsData from "../services/getAllPokemonData";
+import getAllPokemonsData from "../../services/getAllPokemonData";
 export default function SearchPokemon() {
   const [pokemonData, setPokemonData] = useState([0]);
 

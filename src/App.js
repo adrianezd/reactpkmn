@@ -1,7 +1,7 @@
 import React from "react";
-import RandomPokemmon from "./components/RandomPokemon";
-import SearchPokemon from "./components/SearchPokemon";
-import SearchbarPokemon from "./components/SearchbarPokemon";
+import RandomPokemmon from "./components/pkmnFunctions/RandomPokemon";
+import SearchPokemon from "./components/pkmnFunctions/SearchPokemon";
+import SearchbarPokemon from "./components/pkmnFunctions/SearchbarPokemon";
 import "./App.css";
 
 function App() {

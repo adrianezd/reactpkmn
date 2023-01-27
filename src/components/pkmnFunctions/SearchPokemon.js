@@ -1,5 +1,5 @@
 import {useState, useEffect} from "react";
-import Pokemon from "../services/getPokemon";
+import Pokemon from "../../services/getPokemon";
 import "./components.styles.css"
 
 export default function SearchPokemon() {

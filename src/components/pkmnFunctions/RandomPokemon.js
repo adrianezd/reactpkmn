@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Pokemon from "../services/getPokemon";
-import TeamPokemon from "../services/getTeamPokemon";
+import Pokemon from "../../services/getPokemon";
+import TeamPokemon from "../../services/getTeamPokemon";
 
 export default function RandomPokemmon(){
     const [pokemon, setPokemon] = useState([]);
