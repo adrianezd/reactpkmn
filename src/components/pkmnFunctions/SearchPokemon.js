@@ -12,7 +12,7 @@ export default function SearchPokemon() {
     return (
         <div className="search">
             <input type="number" placeholder="Buscar pokemon" id="pokemonsearch"></input>
-            <button onClick={() => 
+            <button class="PkmnButton" onClick={() => 
                 Pokemon({ id: document.getElementById("pokemonsearch").value }).then((pokemon) => setPokemonFound(pokemon))
             }>EMPEZAR BUSQUEDA</button>
             <h3 className="pokemonFound">{pokemonFound}</h3>

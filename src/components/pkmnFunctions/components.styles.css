@@ -3,9 +3,70 @@
     margin: 8px 0;
   }
   
+.Pkmn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+  }
+  
+  .PkmnButton{
+    background-color: #ffffff; /* Green */
+    border: none;
+    color: rgb(7, 7, 7);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 16px 19px;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+
+  .PkmnButton:hover{
+    background-color: #5eec5c;
+    color: rgb(0, 0, 0);
+  }
+
+  .PkmnButton:active{
+    background-color: #2cab3b;
+    color: rgb(0, 0, 0);
+  }
+  
+.PkmnTeam{
+  border: 1 px solid wheat;
+  border-radius: 12px;
+  padding: 10px 10px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  width: 100%;
+}
+  
+  
 select{
   display: none;
 }
+
+.selectPkmn{
+  display: none;
+  background-color: #ffffff; /* Green */
+    border: none;
+    color: rgb(7, 7, 7);
+    margin-top: 10%;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
   .search{
     flex-direction: column;
     align-items: center;

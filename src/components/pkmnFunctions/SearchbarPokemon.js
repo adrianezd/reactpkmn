@@ -12,10 +12,10 @@ export default function SearchPokemon() {
 
   return (
     <div>
-      <button id="botonCargarPokemons" onClick={cargarPokemonsLista}>
+      <button id="botonCargarPokemons" class="PkmnButton" onClick={cargarPokemonsLista}>
         Cargar pokemons
       </button>
-      <select id="selectPkmn">
+      <select id="selectPkmn" class="selectPkmn">
         {pokemonData.map((pokemon) => {
           return <option>{pokemon.name}</option>;
         })}
