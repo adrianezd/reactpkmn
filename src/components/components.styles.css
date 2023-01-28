@@ -80,16 +80,42 @@ select{
     border-radius: 12px;
   }
 
-  .button {
-    background-color: #ffffff; /* Green */
+  button {
+    background: black;
     border: none;
-    color: rgb(7, 7, 7);
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 16px 19px;
-    cursor: pointer;
+    cursor : pointer;
+    padding : 16px 32px;
+    color : white;
     border-radius: 12px;
-  } 
+    font-size: 24 px;
+    font-weight: bold;
+    position: relative;
+  }
+
+  button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #35df46, #33b2b2, #aeda37, #ba722d
+    );
+    z-index: -1;
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 14s linear infinite;
+  }
+
+@keyframes glowing{
+  0%{
+    background-position: 0 0;
+  }
+  50%{
+    background-position: 400% 0;
+  }
+  100%{
+    background-position: 0 0;
+  }
+}
