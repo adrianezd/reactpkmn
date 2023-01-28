@@ -9,10 +9,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <RandomPokemmon /> 
-         <SearchPokemon />
+        <RandomPokemmon />
         <SearchbarPokemon /> 
-        <PlayGame />
+         <SearchPokemon />
       </header>
     </div>
   );
